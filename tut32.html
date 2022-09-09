@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Attribute and n thPseudo selector</title>
+    <style>
+        .container {
+            /* margin: 34px 23px; */
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        a[target] {
+            font-size: 30px;
+            color: sandybrown;
+        }
+
+        a[target='_self'] {
+            font-size: 30px;
+            color: steelblue;
+        }
+
+        input[type="email"] {
+            color: yellow;
+            border: 6px solid green;
+        }
+
+        li:nth-child(5) {
+            /* this will apply css for fourthchild */
+            color: teal;
+        }
+
+        li:nth-child(2n+0) {
+            color: violet;
+        }
+
+        li:nth-child(odd) {
+            background-color: tomato;
+        }
+
+        li:nth-child(even) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <a href="http://google.com" target="_blank"> Go to Google</a>
+            <a href="http://facebook.com" target="_self"> Go to Facebook</a>
+        </h1>
+        <form action="" class="form.control">
+            <input type="text" placeholder="Enter Your name">
+            <input type="email" placeholder="Enter Your email">
+
+
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="iem-1">item 1</li>
+            <li class="item" id="iem-2">item 2</li>
+            <li class="item" id="iem-3">item 3</li>
+            <li class="item" id="iem-4">item 4</li>
+            <li class="item" id="iem-5">item 5</li>
+            <li class="item" id="iem-6">item 6</li>
+            <li class="item" id="iem-7">item 7</li>
+            <li class="item" id="iem-8">item 8</li>
+            <li class="item" id="iem-9">item 9</li>
+            <li class="item" id="iem-10">item 10</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSISTION</title>
+    <style>
+
+    #box1{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        justify-content: center;
+        align-items : center;
+        background-color: chocolate;
+        transition-property: background-color;
+        transition-duration: 8s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        transition: background-color 1s ease-in-out 1s;
+        transition: all 1s ease-in-out 1s;
+    }
+    #box1:hover{
+        background-color: yellowgreen;
+        height: 500px;
+        width: 500px;
+        border-radius: 23px;
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    </style>
+</head>
+<body>
+    <H3>This is CSS TRANSISTION</H3>
+    <div class="container">
+        <div id="box1">
+This is a box
+        </div>
+        <!-- <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div> -->
+    </div>
+    
+</body>
+</html>

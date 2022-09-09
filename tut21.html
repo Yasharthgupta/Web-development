@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Pacifico', cursive;
+        }
+
+        .container {
+            width: 900px;
+
+            border: 3px solid purple;
+            margin: 49px auto;
+            background-color: cyan;
+
+        }
+
+        .item {
+            border: 5px solid rgb(114, 80, 101);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: blanchedalmond;
+
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+
+
+        }
+
+        #Computer {
+            float: left;
+            width: 48%;
+
+        }
+
+        #Stationary {
+            /* float: left; */
+            width: 100%;
+            /* clear: both; */
+            clear: left;
+
+        }
+
+        p,
+        h3 {
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+            text-align: center;
+            /* which property is written after that is only valid  */
+        }
+
+        h1 {
+            MARGIN: 23px auto;
+            WIDTH: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing eli
+                t. Obcaecati deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at facere dolorem
+                dicta laudantium temporibus, eum iste impedit placeat unde molestiae, in eius.
+                velit, nostrum sit ab repellendus voluptatem? Nesciunt, iste odio. Repudiandae eaque sequi corporis!
+                Sit, perferendis.</p>
+        </div>
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+                deleniti velit, nostrum sit ab repellendus voluptatem? Nesciunt, iste odio. Repudiandae
+                eaque sequi corporis! Sit, perferendis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+                optio dolor dolorem sapiente, ducimus illo iure consequuntur illum pariatur rem temporibus corporis
+                deserunt eius!</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+                deleniti velit, nostrum
+                sit ab repellendus voluptatem? Nesciunt, iste odio. Repudiandae eaque sequi corporis! Sit, perferendis.
+            </p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Stationary</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+                deleniti velit, nostrum
+                sit ab repellendus voluptatem? Nesciunt, iste odio. Repudiandae eaque sequi corporis! Sit, perferendis.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
